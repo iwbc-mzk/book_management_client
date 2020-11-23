@@ -4,9 +4,9 @@
     no-underscore-dangle: 0
 */
 import { createStore } from 'redux';
-import rootReducer from './reducer';
+import bookManagementReducer from './reducers/bookManagementReducer';
 
 export default createStore(
-  rootReducer,
+  bookManagementReducer,
   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__(),
 );
